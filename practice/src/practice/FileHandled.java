@@ -14,7 +14,7 @@ public class FileHandled {
 		}
 	}
 	public static void write() throws FileNotFoundException, IOException {
-		try(FileOutputStream fout=new FileOutputStream("src/practice/Hello.txt")){
+		try(FileOutputStream fout=new FileOutputStream("src/practice/Hello.txt",true)){
 			String msg="Hii How are you??";
 			fout.write(msg.getBytes());
 			fout.flush();
