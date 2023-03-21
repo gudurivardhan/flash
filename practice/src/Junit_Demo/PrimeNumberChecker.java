@@ -1,7 +1,7 @@
 package Junit_Demo;
 
 public class PrimeNumberChecker {
-	public Boolean validate(final Integer primeNumber) {
+	public Boolean validate(final Integer primeNumber){
 		for (int i = 2; i < (primeNumber / 2); i++) {
 			if (primeNumber % i == 0) {
 				return false;
@@ -10,3 +10,4 @@ public class PrimeNumberChecker {
 		return true;
 	}
 }
+
